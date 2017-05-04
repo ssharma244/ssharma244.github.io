@@ -1,0 +1,56 @@
+.tabs {
+	list-style-type: none;
+	padding:0;
+	margin:0;
+	position:relative;
+}
+
+.tabs li{
+	float:left;
+}
+
+.tabs li > input{
+	display:none;
+}
+
+.tabs li > label {
+	display.inline-block;
+	border:1px solid #009;
+	border-right-width:7;
+	border-bottom-width:0;
+	height:30px;
+	line-height:30px;
+	padding:10px 30px;
+	cursor:pointer;
+	border-radius:8px;
+	background-color:green;
+	color: white;
+}
+
+.tabs li:last-child > label{
+	border-right-width:1px;
+}
+
+.tabs .tab-content{
+	display:none;
+	position:absolute;
+	left:0;
+	padding:20px;
+	border:5px solid #009;
+	background-color:#e3d0e6;
+	background-image: url(tiger.jpg);
+	background-repeat:no-repeat cover;
+	background-size: cover;
+}
+
+.tabs li> input:checked + label {
+	background-color:#5BC85B;
+}
+	
+.tabs li > input:checked ~ .tab-content {
+	display:block;
+}	
+
+ 
+
+
